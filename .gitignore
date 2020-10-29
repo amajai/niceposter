@@ -53,5 +53,6 @@ ENV/
 *.ttf
 
 # images
-*.png
+
 *.jpg
+/*.png
