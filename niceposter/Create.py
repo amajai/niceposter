@@ -3,7 +3,7 @@ import os
 
 class Poster:
     def __init__(
-        self, bg_img=None, base_size=None, bg_color=('RGB',(255, 255, 255)) , img_name='img.png'
+        self, bg_img=None, base_size=None, bg_color=('RGB',(165, 165, 165)) , img_name='img.png'
     ):
         if bg_img == None:
             mode, color = bg_color
@@ -34,7 +34,7 @@ class Poster:
             [(0, 0), (self.max_width, self.max_height)], fill, outline, thickness)
         self.bg_img.save(self.img_name)
 
-    def add_image(self, img_name, position, move=(0,0), resize=None, scale=None, crop=None):
+    def add_image(self, img_name, position=(0,0), move=(0,0), resize=None, scale=None, crop=None):
         img = Image.open(img_name)
         if resize != None:
             img = img.resize(resize, Image.ANTIALIAS)  
@@ -70,7 +70,7 @@ class Poster:
         self.bg_img.save(self.img_name)
 
     def text(
-        self, text, position, text_size=30, move=(0,0), color=None, 
+        self, text, position=(0,0), text_size=30, move=(0,0), color=None, 
         textbox_width=200, font_style=None, align='left', spacing=4, stroke_width=0
     ):
         lines = []
@@ -130,9 +130,9 @@ class Poster:
             'bc':((self.max_width - width)//2, self.max_height - height),
             'br':(self.max_width - width, self.max_height - height),
         }
-        selected_position = positions.get(position, (0,0))
-        cx, cy = selected_position
-        self.bg_img.paste(sq, (cx+x, cy+y), sq)
+        X, Y = positions.get(position, position)
+        x, y = move
+        self.bg_img.paste(sq, (X+x, Y+y), sq)
         self.bg_img.save(self.img_name)
 
     @property
