@@ -3,8 +3,16 @@
 <p>
 
 # Niceposter
+  <p>
+    <a href="https://github.com/python-pillow/Pillow">
+      <img src="https://img.shields.io/badge/built%20with-Pillow-yellow.svg" />
+    </a>
+    <a href="https://www.python.org/">
+    	<img src="https://img.shields.io/badge/built%20with-Python3-red.svg" />
+    </a>
+  </p>
 A library that allows you to create your own image poster which you can use to share on social media. Implemented in Python using the PIL module.
-
+</br>
 <img src="https://raw.githubusercontent.com/amajai/niceposter/main/res/demo.gif">
 
 ## **Installation**
@@ -31,7 +39,7 @@ bg_image = Create.Poster() # default size of 500x500
 
 Then use any one of the methods to make or add changes to an image. Examples:
 ```python
-bg_image.add_image('cool-image.png', position='cc', scale=20) # added in center of the bg image and scaled down by 20%
+bg_image.add_image('cool-image.png', position='cc', scale=20)
 bg_image.text('Interesting text!', position(50,50), color='red', align='center')
 bg_image.frame(thickness=10)
 bg_image.filter(rgb=(255,255,255), opacity=50)
@@ -41,11 +49,15 @@ bg_image.filter(rgb=(255,255,255), opacity=50)
 ```elm
 pip install niceposter -U
 ```
-## Documentation
+## Basic functions
 [**In progress**]
 
 ## Features in progress
-[**In progress**]
+⬜ Add `add_shape` method option to provide variety of available shapes
+
+⬜ Add image transformations options
+
+⬜ Add image effects options
 
 ## Documentation
 Contributions are welcome, and they are greatly appreciated! Every little bit
