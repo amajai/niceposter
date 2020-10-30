@@ -4,6 +4,7 @@
 
 # Niceposter
 ![PyPI](https://img.shields.io/pypi/v/niceposter?label=latest%20version)
+![Pillow](https://img.shields.io/badge/Built%20with-Pillow-yellow) 
 
   
 A library that allows you to create your own image poster which you can use to share on social media. Implemented in Python using the PIL module.
