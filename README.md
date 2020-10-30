@@ -12,8 +12,12 @@
     </a>
   </p>
 A library that allows you to create your own image poster which you can use to share on social media. Implemented in Python using the PIL module.
+
 </br>
-<img src="https://raw.githubusercontent.com/amajai/niceposter/main/res/demo.gif">
+<p>
+  <img src="https://raw.githubusercontent.com/amajai/niceposter/main/res/demo.gif">
+</P>
+
 
 ## **Installation**
 ```elm
