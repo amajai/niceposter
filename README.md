@@ -3,14 +3,8 @@
 <p>
 
 # Niceposter
-<p>
-  <a href="https://github.com/python-pillow/Pillow">
-    <img src="https://img.shields.io/badge/built%20with-Pillow-yellow.svg" />
-  </a>
-  <a href="https://www.python.org/">
-    <img src="https://img.shields.io/badge/built%20with-Python3-red.svg" />
-  </a>
-</p>
+![PyPI](https://img.shields.io/pypi/v/niceposter?label=latest%20version)
+
   
 A library that allows you to create your own image poster which you can use to share on social media. Implemented in Python using the PIL module.
 
